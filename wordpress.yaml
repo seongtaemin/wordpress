@@ -28,7 +28,7 @@ spec:
             topologyKey: kubernetes.io/hostname
       containers:
       - name: wordpress
-        image: harbor.kolon.local/library/wordpress:16
+        image: harbor.kolon.local/library/wordpress:17
         resources:
           requests:
             cpu: "200m"
