@@ -56,7 +56,7 @@ spec:
       resources:
         requests:
           storage: 10Gi
-      # storageClassName: nutanix-volume
+      storageClassName: nutanix-volume
 ---
 apiVersion: v1
 kind: Service
