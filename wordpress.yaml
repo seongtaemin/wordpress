@@ -18,16 +18,7 @@ spec:
     spec:
       imagePullSecrets:
       - name: harbor-credentials
-      affinity:
-        podAntiAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
-          - labelSelector:
-              matchExpressions:
-              - key: app
-                operator: In
-                values:
-                - wordpress
-            topologyKey: kubernetes.io/hostname
+
       containers:
       - name: wordpress
         image: harbor.kolon.local/library/wordpress:25 # upstream-version: 6.0
