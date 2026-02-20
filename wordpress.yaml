@@ -18,7 +18,6 @@ spec:
     spec:
       imagePullSecrets:
       - name: harbor-credentials
-
       containers:
       - name: wordpress
         image: harbor.kolon.local/library/wordpress:6.0 # upstream-version: 6.0
