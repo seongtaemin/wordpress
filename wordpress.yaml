@@ -28,9 +28,11 @@ spec:
                 values:
                 - wordpress
             topologyKey: kubernetes.io/hostname
+      imagePullSecrets:
+      - name: harbor-credentials
       containers:
       - name: wordpress
-        image: harbor.kolon.local/library/wordpress:26 # upstream-version: 6.0
+        image: harbor.kolon.local/library/wordpress:27 # upstream-version: 6.0
         resources:
           requests:
             cpu: "200m"
