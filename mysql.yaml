@@ -19,7 +19,7 @@ spec:
       - name: harbor-credentials
       containers:
       - name: mysql
-        image: harbor.kolon.local/library/mysql:23 # upstream-version: 8.0
+        image: harbor.kolon.local/library/mysql:24 # upstream-version: 8.0
         env:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
