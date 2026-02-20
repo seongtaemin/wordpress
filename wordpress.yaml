@@ -16,6 +16,8 @@ spec:
         tier: frontend
         app: wordpress
     spec:
+      imagePullSecrets:
+      - name: harbor-credentials
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
