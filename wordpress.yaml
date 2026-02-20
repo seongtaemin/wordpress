@@ -21,7 +21,7 @@ spec:
 
       containers:
       - name: wordpress
-        image: harbor.kolon.local/library/wordpress:25 # upstream-version: 6.0
+        image: harbor.kolon.local/library/wordpress:6.0 # upstream-version: 6.0
         resources:
           requests:
             cpu: "200m"
